@@ -68,7 +68,7 @@
 			                    const link = text.match(urlPattern);
 			                    $link.focus()
 			                    $link.value = link[0];
-								if ("密码" in text) {
+								if (text.indexOf("密码") != -1 || text.indexOf("密碼") != -1) {
 			                    const rawPassword = text.split("密码")[1] || text.split("密碼")[1];
 			                    const password = rawPassword.match(pwPattern);
 			                    $passcode.focus()
